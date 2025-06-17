@@ -21,10 +21,9 @@ while True:
     if player_choice not in choice:
         print("Invalid choice")
         continue
-
-
-    computer_choice= random.choice(choice)
-    print(f"Computer's choice is {computer_choice}")
+    else:
+      computer_choice= random.choice(choice)
+      print(f"Computer's choice is {computer_choice}")
 
     result= winner(player_choice, computer_choice)
     print(result)
